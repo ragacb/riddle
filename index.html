@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Riddle</title>
+ <link rel="shortcut icon" href="p4.ico" type="image/x-icon" />
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#foot").click(function(){
+    $("#inst").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $(this).css("color","grey");
+  });
+});
+
+</script>
+ 
+ <link href="riddle.css" rel="stylesheet" type="text/css"/>
+ <link href="imgs.css" rel="stylesheet" type="text/css"/>
+<style>
+	    body
+	    {
+		background-image:url("80.jpg");
+	    }
+		button
+        {
+	    font-family:"Harrington";
+	    font-weight:bold;
+	    font-size:18px;
+        border-radius: 5px;
+	    background-image: -moz-linear-gradient( 90deg, #FC0358 0%, #AA0428 100%);
+	    background-image: -webkit-linear-gradient( 90deg,#FC0358  0%, #AA0428 100%);
+	    background-image: -ms-linear-gradient( 90deg, #FC0358 0%, #AA0428 100%);
+	    color: #CFCBCB;
+	   /* width:100px;*/
+	    box-shadow: 3px 3px 3px 3px rgb( 0, 0, 0 );
+        position:relative;
+	    /*margin:5px;*/
+	    padding: 3px;
+	    z-index: 5;
+		border-width:0px;         
+}
+</style>
+</head>
+
+<body>
+<div id="head1">??read?</div>
+<div id="head2">ReVeaL...</div>
+<div id="head3">RE---ACT !!</div>
+
+<div id="flex_container">
+
+<div id="left">
+<p>Hello!Season's Greetings!I'm here to challenge you with a question which ofcourse, is not difficult!!You may take the help of clues also.So as to understand my intention,GO THROUGH THE INSTRUCTIONS AND THEN ONLY START WITH READING THE QUESTION. </p>
+<p><button id="easy">Easy</button> <button id="medium">Medium</button> <button id="hard">Hard</button></p>
+<p><strong>QUESTION:</strong>I'm heavy but not backwards...Who am I? Father is rough, Mother is fibrous, kids are gems and grand kids are toy stones...What is it?</p>
+
+<p><strong>ANSWER:</strong><textarea id="tarea" form="form1"></textarea><button id="ok">OK</button></p>
+
+</div>
+
+<div id="right"><p id="score">Score : <span id="value">100</span></p>
+<div id="image">
+<img class="im1" src="p7.jpg">
+<img class="im2" src="p6.jpeg">
+<img class="im3" src="p2.jpg">
+<img class="im4" src="p1.jpg">
+<img class="im5" src="p6.jpeg">
+<img class="im6" src="p7.jpg">
+<img class="im7" src="p1.jpg">
+<img class="im8" src="p2.jpg">
+<img class="im9" src="p1.jpg">
+<img class="im10" src="p7.jpg">
+<img class="im11" src="p2.jpg">
+<img class="im12" src="p6.jpeg">
+<img class="im13" src="p7.jpg">
+<img class="im14" src="p6.jpeg">
+<img class="im15" src="p2.jpg">
+<img class="im16" src="p1.jpg">
+<img class="im17" src="p6.jpeg">
+<img class="im18" src="p7.jpg">
+<img class="im19" src="p1.jpg">
+<img class="im20" src="p2.jpg">
+<img class="im21" src="p1.jpg">
+<img class="im22" src="p7.jpg">
+<img class="im23" src="p2.jpg">
+<img class="im24" src="p6.jpeg">
+<img class="im25" src="p7.jpg">
+<img class="im26" src="p6.jpeg">
+<img class="im27" src="p2.jpg">
+<img class="im28" src="p1.jpg">
+<img class="im28" src="p6.jpeg">
+<img class="im30" src="p7.jpg">
+<img src="p1.jpg">
+<img src="p2.jpg">
+<img src="p1.jpg">
+<img src="p7.jpg">
+<img src="p2.jpg">
+<img src="p6.jpeg">
+<img src="p7.jpg">
+<img src="p6.jpeg">
+<img src="p2.jpg">
+<img src="p1.jpg">
+<img src="p6.jpeg">
+<img src="p7.jpg">
+<img src="p1.jpg">
+<img src="p2.jpg">
+<img src="p1.jpg">
+<img src="p7.jpg">
+<img src="p2.jpg">
+<img src="p6.jpeg">
+</div>
+<button id="clue">Need a Clue?</button></div>
+
+</div>
+
+
+<div id="inst">
+<ul>
+<li>As you can see,an image is covered using smaller images.</li>
+<li>You will be given an initial score and each time you want to get a random cover-image removed,click on "Need a Clue?" button.
+The score will reduce by certain amount revealing a particular part of the main image. </li>
+<li>At any point of time, you can guess the picture and answer till the score reduces to 0..the answer is case-insensitive </li>
+<li>The riddle is in 3 modes: easy, medium and hard...nearer the revealed parts of the images are, easier the game will be</li>
+</ul>
+</div>
+
+<footer id="foot">Instructions <span>(click here to open/close the insructions box)</span></footer>
+
+<script src="define.js"></script>
+
+</body>
+</html>
