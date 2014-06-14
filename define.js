@@ -1,38 +1,54 @@
 // JavaScript Document
 var score;
-var answer;
-var given;
+var answer='jackfruit';
 var i;
 var initial=100;
 score==initial;
+var list=document.querySelectorAll('.cover');
 
 function check()
 {
-	given=document.getElementById('tarea').value;
+	var given=document.getElementById('tarea').getAttribute('value');
+	given=given.toLowerCase();
 	if(given==answer)
 	{
 		document.getElementById('value').value=score;
+		alert('Right Answer!Check your score!');
 	}
 	else
 	{
 		alert('Wrong Answer');
 	}
 }
+
+
 function decrease()
 {
-	score=score-4.8;
+	score=score-10;
 	document.getElementById('value').innerhtml=score;
 }
-function easy()
+
+function easy_reveal()
 {
-	for(i=0;i<=48;i++)
-	{
-	if($("#clue").click)
-	{
-	decrease;	
-	}
-	}
+list.item(i).style.visibility='hidden';
+decrease;
 }
 
-/*var document.getElementById('tarea')*/
+function easy()
+{
+	for(i=0;i<list.length;i++)
+	{
+	 document.getElementById('clue').onclick=easy_reveal;
+	}
+	document.getElementById('ok').onclick=check;
+		/*if(document.getElementById('clue').clicked == true)
+		{
+			easy_reveal;
+		}*/
+}
 
+$(document).ready(function(){
+  $("#easy").click(function(){
+    easy();
+  });
+});

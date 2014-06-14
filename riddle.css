@@ -1,10 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
-.cover
+/*.cover
 {
 	height:50px;
 	width:50px;
-}
+}*/
 
 #head1
 {
@@ -202,15 +202,15 @@
 	padding: 3px;
 	z-index: 5;         
 }
-#value
+#number
 {
 	font-weight:bolder;
 }
 #image
 {
-	background-image:url("28.jpg");
+	background-image:url("j1.jpg");
 	width:400px;
-	height:267px;
+	height:270px;
 	position:relative;
 	display:-webkit-flex;
 	display:flex;
@@ -225,14 +225,14 @@
 	border-color:#6B6969;
 	border-width:2px;
 }
-#image img
+.cover
 {   position:relative;
-	height:43.5px;
-	width:49px;
+	height:90px;
+	width:100px;
     margin:0px;
-	border-color:#000000;
+	/*border-color:#000000;
 	border-style:solid;
-	border-width:1px 1px 0px 0px;
+	border-width:1px 1px 0px 0px;*/
 	
 }
 #tarea
@@ -247,7 +247,7 @@
 	max-width:200px;
 	padding:2px;
 	height:19px;
-	font-family:"CYBERTOOTH";
+	/*font-family:"CYBERTOOTH";*/
 }
 /*#easy,#medium,#hard,#ok
 {
