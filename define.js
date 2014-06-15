@@ -3,7 +3,7 @@ var score;
 var answer='jackfruit';
 var i;
 var initial=100;
-score==initial;
+score=initial; 
 var list=document.querySelectorAll('.cover');
 
 function check()
@@ -47,8 +47,18 @@ function easy()
 		}*/
 }
 
-$(document).ready(function(){
+
+function start()
+{
+	if(document.getElementById('easy').clicked==true) easy;
+	if(document.getElementById('medium').clicked==true) medium;
+	if(document.getElementById('hard').clicked==true) hard;
+}
+
+/*$(document).ready(function(){
   $("#easy").click(function(){
     easy();
   });
 });
+*/
+window.onload=start;
