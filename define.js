@@ -21,9 +21,7 @@ function check()
 	}
 }
 
-function start()
-{
-	document.getElementById('ok').onclick=check;
-}
-
-window.onload=start;
+$("#ok").click(function(){
+	check();
+});
+	
