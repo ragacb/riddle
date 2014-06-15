@@ -4,8 +4,8 @@ var answer='jackfruit';
 var i;
 var initial=100;
 score=initial; 
-list=document.querySelectorAll('.cover');
-
+var list=document.querySelectorAll('.cover');
+var l=list.length;
 function check()
 {   
 	var given=document.getElementById('tarea').value;
@@ -24,4 +24,30 @@ function check()
 $("#ok").click(function(){
 	check();
 });
+
+function decrease()
+{
+	score=score-10;
+	$("#number").html(score);
+}
+
+function easy_reveal()
+{
+	list.item(l-i).style.visibility="hidden";
+	decrease();
+}
 	
+function easy()
+{
+	for(i=0;i<l;i++)
+	{
+		$("#clue").click(function(){
+			easy_reveal();
+		});
+	}
+	
+}
+
+$("#easy").click(function(){
+	easy();
+});
