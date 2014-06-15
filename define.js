@@ -4,7 +4,7 @@ var answer='jackfruit';
 var i;
 var initial=100;
 score=initial; 
-var list=document.querySelectorAll('.cover');
+var list = document.querySelectorAll('.cover');
 
 function check()
 {
@@ -28,23 +28,68 @@ function decrease()
 	document.getElementById('value').innerhtml=score;
 }
 
-function easy_reveal()
-{
-list.item(i).style.visibility='hidden';
-decrease;
-}
+
 
 function easy()
 {
-	for(i=0;i<list.length;i++)
-	{
-	 document.getElementById('clue').onclick=easy_reveal;
-	}
+	if(document.getElementById('clue').clicked==true);
+   {
+   list.item(5).style.visibility='hidden';
+   decrease;
+   }
+   if(document.getElementById('clue').clicked==true);
+   {
+   list.item(6).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(7).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(8).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(9).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(10).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(11).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(12).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(4).style.visibility='hidden';
+   decrease;
+   }if(document.getElementById('clue').clicked==true);
+   {
+   list.item(3).style.visibility='hidden';
+   decrease;
+   }
+	 
+	
 	document.getElementById('ok').onclick=check;
 		/*if(document.getElementById('clue').clicked == true)
 		{
 			easy_reveal;
 		}*/
+}
+
+function medium()
+{
+   if(document.getElementById('clue').clicked==true);
+   {
+   list.item(5).style.visibility='hidden';
+   decrease;
+   }
 }
 
 
@@ -55,10 +100,6 @@ function start()
 	if(document.getElementById('hard').clicked==true) {hard;}
 }
 
-/*$(document).ready(function(){
-  $("#easy").click(function(){
-    easy();
-  });
+$(document).ready(function(){
+  start();
 });
-*/
-window.onload=start;
