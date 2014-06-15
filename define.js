@@ -50,9 +50,9 @@ function easy()
 
 function start()
 {
-	if(document.getElementById('easy').clicked==true) easy;
-	if(document.getElementById('medium').clicked==true) medium;
-	if(document.getElementById('hard').clicked==true) hard;
+	if(document.getElementById('easy').clicked==true) {easy;}
+	if(document.getElementById('medium').clicked==true) {medium;}
+	if(document.getElementById('hard').clicked==true) {hard;}
 }
 
 /*$(document).ready(function(){
