@@ -1,7 +1,7 @@
 // JavaScript Document
 var score;
 var answer='jackfruit';
-var i;
+var i=0;
 var initial=100;
 score=initial; 
 var list=document.querySelectorAll('.cover');
@@ -31,21 +31,27 @@ function decrease()
 	$("#number").html(score);
 }
 
-function easy_reveal()
-{
-	list.item(l-i).style.visibility="hidden";
-	decrease();
-}
+
 	
 function easy()
 {
-	for(i=0;i<l;i++)
+	/*for(i=0;i<l;i++)
 	{
 		$("#clue").click(function(){
-			easy_reveal();
+			list.item(l-i).style.visibility="hidden";
 		});
+		
 	}
-	
+	*/
+	$("#clue").click(function(){
+			list.item(i).style.visibility="hidden";
+			decrease();
+		
+		if(i<l)
+		{easy();}
+		});
+		i++;
+			
 }
 
 $("#easy").click(function(){
