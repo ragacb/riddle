@@ -13,11 +13,11 @@ function check()
 	if(given==answer)
 	{
 		document.getElementById('number').value=score;
-		alert('Right Answer!Check your score!');
+		document.getElementById('appear').innerHTML='Right answer!!Check your score!';
 	}
 	else
 	{
-		alert('Wrong Answer');
+		document.getElementById('appear').innerHTML='Sorry..Try again';
 	}
 }
 
