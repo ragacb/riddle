@@ -367,3 +367,4 @@ $("#medium").click(function(){
 $("#hard").click(function(){
 	hard();
 });
+
